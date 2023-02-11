@@ -51,8 +51,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         }
 	
 	function getResults(){
-		var allergyPercent = (allergy_count / 4) * 100;
-		var coldPercent = (cold_count / 4) * 100;
+		var allergyPercent = (allergy_count / 6) * 100;
+		var coldPercent = (cold_count / 6) * 100;
 			document.getElementById("results").innerHTML = "Probability it is allergies = " + allergyPercent + "<br> Probability it is a cold = " + coldPercent;
 	}
 
@@ -109,7 +109,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#two"  onclick="coldAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 		
- 		<!-- Added question one into comments -->
+ 		<!-- Added question one into comments;rounded button and changed color to gray -->
 	</div>
 </div>
 
@@ -124,7 +124,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#three"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 	
-		<!-- Added question two into comments -->
+		<!-- Added question two into content area; changed button and changed color to gray -->
 	</div>
 </div> 
 
@@ -139,7 +139,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#four"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 		
-		<!-- Added question three into comments -->
+		<!-- Added question three into comments; changed button and changed color to gray -->
 	</div>
 	
 </div>
@@ -151,13 +151,47 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 
 <div id="content" class="w3-container">
 	<p>Are your symptoms seasonal or chronic?</p>    
-	<a href="#end"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge"> Yes</a>
-        <a href="#end"  onclick="coldAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
+	<a href="#five"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge"> Yes</a>
+        <a href="#five"  onclick="coldAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 		
-		<!-- Added question four into comments -->
+		<!-- Added question four into comments; changed button and changed color to gray; had to change hypertext reference back to five since I had to add more questions -->
+	</div>
+
+</div>
+
+<div class="page" id="five">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 5</h1>
+	</div>
+
+<div id="content" class="w3-container">
+	<p>Are you experiencing general Aches and pains?</p>    
+	<a href="#six"  onclick="coldAdd();" class="w3-btn w3-gray w3-round-xlarge"> Yes</a>
+        <a href="#six"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
+	<div id="content" class="w3-container">
+		
+		<!-- Added question five into comments; changed button appearace; updated hypertext reference to not end -->
+	
 	</div>
 	
+</div>
+
+<div class="page" id="six">
+	<div class="w3-container w3-flat-carrot">
+		<h1>Question 4</h1>
+	</div>
+
+<div id="content" class="w3-container">
+	<p>Do you have a sore throat?</p>    
+	<a href="#end"  onclick="coldAdd();" class="w3-btn w3-gray w3-round-xlarge"> Yes</a>
+        <a href="#end"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
+	<div id="content" class="w3-container">
+		
+		<!-- Entered the last question and end into the hypertext reference -->
+		
+	</div>
+
 </div>
 
 <div class="page" id="end">
@@ -171,7 +205,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 		
 	<p>FEEL BETTER!</p>
 	
-		<!--Added the results page and added a statement for reassurance -->
+		<!--Added the results page; followed same process of adding new page; added button to release results; changed button appearance and added a statement for reassurance lol -->
 			
 	</div>
 	
