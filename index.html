@@ -85,6 +85,8 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
 <body>
 <div id="header" class="w3-container w3-flat-carrot">
 	<h1>Cold or Allergies?</h1>
+	
+	<!-- Adds header to visiting page -->
 </div>
 	
 <div id="content" class="w3-container">
@@ -96,7 +98,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
  	
 	<p>THIS CODE SHOULD NOT BE USED TO DIAGNOSE ANY KIND OF MEDICAL CONDITION.</p>
 	
-<!-- The code below will add the first page with the first short question -->
+<!-- The code below will add the first page with the first short question, id header will display text at the top of the page -->
 
 <div class="page" id="one">
 	<div id="header" class="w3-container w3-flat-carrot">
@@ -109,13 +111,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#two"  onclick="coldAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 		
- 		<!-- Added question one into comments;rounded button and changed color to gray -->
+ 		<!-- Added question one into content area;rounded button and changed color to gray; onclick will add to script function -->
 	</div>
 </div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 		<p>DIY!</p>
 		
+	<!-- Realized footer was not showing on all pages so I put this footer line after each content section -->
+	
 	</div>
 	
 </div>
@@ -131,7 +135,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#three"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 	
-		<!-- Added question two into content area; changed button and changed color to gray -->
+		<!-- Added question two into content area; changed button and changed color to gray;swapped cold and allergy function in onclick to match answer -->
 	</div>
 </div> 
 
@@ -153,13 +157,15 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#four"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 		
-		<!-- Added question three into comments; changed button and changed color to gray -->
+		<!-- Added question three into content; changed button and changed color to gray; understood that container was a display box  -->
 	</div>
 	
 </div>
 
 <footer class="w3-bottom w3-container w3-flat-carrot">
 		<p>DIY!</p>
+	
+	<!-- Added footer line again for this question -->
 		
 	</div>
 	
@@ -199,7 +205,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#six"  onclick="allergyAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 		
-		<!-- Added question five into comments; changed button appearace; updated hypertext reference to not end -->
+		<!-- Added question five into comments; changed button appearace; updated hypertext reference to not end; found another symptom to differentiate btwn cold and allergy -->
 	
 	</div>
 	
@@ -223,7 +229,7 @@ https://stackoverflow.com/questions/8211128/multiple-distinct-pages-in-one-html-
         <a href="#end"  onclick="coldAdd();" class="w3-btn w3-gray w3-round-xlarge">No</a>
 	<div id="content" class="w3-container">
 		
-		<!-- Entered the last question and end into the hypertext reference; found new question to add to allergy count -->
+		<!-- Entered the last question and end into the hypertext reference; found new question to add to allergy count; used the same button appearance code -->
 		
 	</div>
 
